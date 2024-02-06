@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaloneta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navegador">
+            <a href="index.html">
+                <div class="navegador--jugadores nav">
+                    JUGADORES
+                </div>
+            </a>
+            <a href="selecciones.html">
+                <div class="navegador--selecciones nav">
+                    SELECCIONES
+                </div>
+            </a>
+            <a href="partidos.html">
+                <div class="navegador--partidos nav">
+                    FIXTURE
+                </div>
+            </a>
+        </div>
+    </nav>
+    <main class="contenedor-grupos" id="contenedor-grupos">
+        <div class="explicaciones">
+            <h1>FIXTURE</h1>
+            <h3>Hola!, falta poco para el mundial y vamos a comenzar con las apuestas!!..
+            </h3>
+            <p>
+                En el cuadro de arriva deberas colocar en que posicion crees que terminara cada equipo luego de los 3
+                partidos de la fase de grupos, agregando en cada cuadro un numero del 1 al 4, luego haz click en el
+                boton "Posicionar" para continuar.
+            </p>
+        </div>
+        <div class="grupos" id="grupos">
+            <div class="selecciones-grupo">
+                <ul class="cada-grupo">
+                    <li class="cada-seleccion">QATAR <input class="input a" type="text"></li>
+                    <li class="cada-seleccion">ECUADOR <input class="input b" type="text"></li>
+                    <li class="cada-seleccion">SENEGAL <input class="input c" type="text"></li>
+                    <li class="cada-seleccion">HOLANDA <input class="input c1" type="text"></li>
+                </ul>
+            </div>
+            <div class="selecciones-grupo">
+                <ul class="cada-grupo">
+                    <li class="cada-seleccion">INGLATERRA <input class="input d" type="text"></li>
+                    <li class="cada-seleccion">IRAN <input class="input e" type="text"></li>
+                    <li class="cada-seleccion">USA <input class="input f" type="text"></li>
+                    <li class="cada-seleccion">G-EUROPA <input class="input g" type="text"></li>
+                </ul>
+            </div>
+            <div class="selecciones-grupo">
+                <ul class="cada-grupo">
+                    <li class="cada-seleccion">ARGENTINA <input class="input h" type="text"></li>
+                    <li class="cada-seleccion">ARABIA SAUDITA <input class="input i" type="text"></li>
+                    <li class="cada-seleccion">MEXICO <input class="input j" type="text"></li>
+                    <li class="cada-seleccion">POLONIA <input class="input k" type="text"></li>
+                </ul>
+            </div>
+            <div class="selecciones-grupo">
+                <ul class="cada-grupo">
+                    <li class="cada-seleccion">FRANCIA <input class="input l" type="text"></li>
+                    <li class="cada-seleccion">G-PLAYOFF1 <input class="input m" type="text"></li>
+                    <li class="cada-seleccion">DINAMARCA <input class="input n" type="text"></li>
+                    <li class="cada-seleccion">TUNEZ <input class="input o" type="text"></li>
+                </ul>
+            </div>
+            <div class="selecciones-grupo">
+                <ul class="cada-grupo">
+                    <li class="cada-seleccion">ESPAÑA <input class="input p" type="text"></li>
+                    <li class="cada-seleccion">G-PLAYOFF2 <input class="input q" type="text"></li>
+                    <li class="cada-seleccion">ALEMANIA <input class="input r" type="text"></li>
+                    <li class="cada-seleccion">JAPON <input class="input s" type="text"></li>
+                </ul>
+            </div>
+            <div class="selecciones-grupo">
+                <ul class="cada-grupo">
+                    <li class="cada-seleccion">BELGICA <input class="input t" type="text"></li>
+                    <li class="cada-seleccion">CANADA <input class="input u" type="text"></li>
+                    <li class="cada-seleccion">MARRUECOS <input class="input v" type="text"></li>
+                    <li class="cada-seleccion">CROACIA <input class="input w" type="text"></li>
+                </ul>
+            </div>
+            <div class="selecciones-grupo">
+                <ul class="cada-grupo">
+                    <li class="cada-seleccion">BRASIL <input class="input x" type="text"></li>
+                    <li class="cada-seleccion">SERBIA <input class="input y" type="text"></li>
+                    <li class="cada-seleccion">SUIZA <input class="input z" type="text"></li>
+                    <li class="cada-seleccion">CAMERUN <input class="input za" type="text"></li>
+                </ul>
+            </div>
+            <div class="selecciones-grupo">
+                <ul class="cada-grupo">
+                    <li class="cada-seleccion">PORTUGAL <input class="input zb" type="text"></li>
+                    <li class="cada-seleccion">GHANA <input class="input zc" type="text"></li>
+                    <li class="cada-seleccion">URUGUAY <input class="input zd" type="text"></li>
+                    <li class="cada-seleccion">COREA <input class="input ze" type="text"></li>
+                </ul>
+            </div>
+            <input class="clasificacion" style="background-color: blue;" type="submit" value="Posicionar" onclick="posicionarGrupos()">
+
+        </div>
+        <div class="explicaciones">
+            <h2>OCTAVOS DE FINAL..</h2>
+            <h3>
+                Llegamos a la fase de octavos, aqui deberas hacer click en cada equipo que creas que ganara su partido y
+                pasara a la siguiente fase!.
+            </h3>
+        </div>
+        
+        <div class="octavos" id="octavos">
+            <div class="partidos-ocatavos">
+                <p class="texto-grupos aa" onclick="clasificacionCuartos1 ()"></p><span>VS</span>
+                <p class="texto-grupos bb" onclick="clasificacionCuartos2 ()"></p>
+            </div>
+            <div class="partidos-ocatavos">
+                <p class="texto-grupos cc" onclick="clasificacionCuartos3 ()"></p><span>VS</span>
+                <p class="texto-grupos dd" onclick="clasificacionCuartos4 ()"></p>
+            </div>
+            <div class="partidos-ocatavos">
+                <p class="texto-grupos ee" onclick="clasificacionCuartos5 ()"></p><span>VS</span>
+                <p class="texto-grupos ff" onclick="clasificacionCuartos6 ()"></p>
+            </div>
+            <div class="partidos-ocatavos">
+                <p class="texto-grupos gg" onclick="clasificacionCuartos7 ()"></p><span>VS</span>
+                <p class="texto-grupos hh" onclick="clasificacionCuartos8 ()"></p>
+            </div>
+            <div class="partidos-ocatavos">
+                <p class="texto-grupos ii" onclick="clasificacionCuartos9 ()"></p><span>VS</span>
+                <p class="texto-grupos jj" onclick="clasificacionCuartos10 ()"></p>
+            </div>
+            <div class="partidos-ocatavos">
+                <p class="texto-grupos kk" onclick="clasificacionCuartos11 ()"></p><span>VS</span>
+                <p class="texto-grupos ll" onclick="clasificacionCuartos12 ()"></p>
+            </div>
+            <div class="partidos-ocatavos">
+                <p class="texto-grupos mm" onclick="clasificacionCuartos13 ()"></p><span>VS</span>
+                <p class="texto-grupos nn" onclick="clasificacionCuartos14 ()"></p>
+            </div>
+            <div class="partidos-ocatavos">
+                <p class="texto-grupos oo" onclick="clasificacionCuartos15 ()"></p><span>VS</span>
+                <p class="texto-grupos pp" onclick="clasificacionCuartos16 ()"></p>
+            </div>
+
+        </div>
+        <div class="explicaciones">
+            <h2>CUARTOS DE FINAL</h2>
+            <h3>Aqui el mecanismo es similar al de octavos de final, tienes que hacer click en los 4 equipos que
+                llegaran a las SEMIFINALES!.</h3>
+        </div>
+        
+        <div class="cuartos" id="cuartos">
+            <div class="partidos-cuartos">
+                <p class="texto-cuartos" onclick="semis1 ()"></p><span>VS</span>
+                <p class="texto-cuartos" onclick="semis2 ()"></p>
+            </div>
+            <div class="partidos-cuartos">
+                <p class="texto-cuartos" onclick="semis3 ()"></p><span>VS</span>
+                <p class="texto-cuartos" onclick="semis4 ()"></p>
+            </div>
+            <div class="partidos-cuartos">
+                <p class="texto-cuartos" onclick="semis5 ()"></p><span>VS</span>
+                <p class="texto-cuartos" onclick="semis6 ()"></p>
+            </div>
+            <div class="partidos-cuartos">
+                <p class="texto-cuartos" onclick="semis7 ()"></p><span>VS</span>
+                <p class="texto-cuartos" onclick="semis8 ()"></p>
+            </div>
+        </div>
+        <div class="explicaciones">
+            <h2>SEMIFINALES!!</h2>
+            <h3>Solo los 4 mejores equipos del mundo estan en esta zona, y ya la decision es mas dificil, por lo tanto
+                tambien tienes que volverte un profesional y arriesgar el resultado de cada partido, luego haz click en
+                el boton "clasificacion" para llegar a la final!.</h3>
+        </div>
+        
+        <div class="semi" id="semi">
+            <div class="partidos-semi">
+                <p class="texto-semi"></p><input type="text" class="input-semi"><span>VS</span>
+                <p class="texto-semi"></p><input type="text" class="input-semi">
+            </div>
+            <div class="partidos-semi">
+                <p class="texto-semi"></p><input type="text" class="input-semi"><span>VS</span>
+                <p class="texto-semi"></p><input type="text" class="input-semi">
+            </div>
+
+        </div>
+        <input type="submit" value="Clasificacion" class="clasificacion" style="margin-bottom: 20px;background-color: blue;"
+            onclick="clasificacionSemi ()">
+            <div class="explicaciones">
+                <h2>Final!!</h2>
+                <h3>Debes arriesgar los resultados de la final como tambien del partido por el tercer y cuarto puesto, luego
+                    reclama la copa para ver el podio!, gracias por participar.</h3>
+            </div>
+        
+        <div class="fase-final" id="fase-final">
+            <div class="tercero final" id="tecero">
+                <div class="partido-tercero p-f">
+                    <p class="texto-tercero tercero1 texto-final"></p><input type="text"
+                        class="input-final"><span>VS</span>
+                    <p class="texto-tercero tercero2 texto-final"></p><input type="text" class="input-final">
+                </div>
+            </div>
+            <div class="final" id="final">
+                <div class="partido-final p-f">
+                    <p class="texto-final finalista1"></p><input type="text" class="input-final"><span>VS</span>
+                    <p class="texto-final finalista2"></p><input type="text" class="input-final">
+                </div>
+            </div>
+
+
+        </div>
+        
+        <div class="campeon"><button style="width: 100%; height:100%; background-color: red;" onclick="finalPartido ()">Reclamar la Copa</button></div>
+
+
+    </main>
+
+    <script src="fixture.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <footer>DARIO MARTINI</footer>
+</body>
+
+
+</html>
